@@ -7,8 +7,9 @@ public class ClickImage {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
 		String baseURL = "https://discord.com/";
-		System.getProperty("webdriver.chrome.driver","E:\\\\Testing related docs\\\\Tester\\\\selenium_testing\\\\chromedriver_win32\\\\chromedriver.exe");
+		System.getProperty("webdriver.chrome.driver",Constant.Driver_Path_Chrome);
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get(baseURL);

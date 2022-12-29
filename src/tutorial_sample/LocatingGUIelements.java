@@ -7,7 +7,7 @@ public class LocatingGUIelements {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "E:\\Testing related docs\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", Constant.Driver_Path_Chrome);
 		WebDriver driver = new ChromeDriver();
 		String baseURL = "https://discord.com/login";
 		String tagName = "";

@@ -10,7 +10,7 @@ public class select_dropdown {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String baseURL = "http://demo.guru99.com/test/newtours/register.php";
-		System.setProperty("webdriver.chrome.driver", "E:\\\\\\\\Testing related docs\\\\\\\\Tester\\\\\\\\selenium_testing\\\\\\\\chromedriver_win32\\\\\\\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", Constant.Driver_Path_Chrome);
 		WebDriver driver = new ChromeDriver();
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver; 

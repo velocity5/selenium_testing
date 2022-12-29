@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class AccessingForms_2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.getProperty("webdriver.chrome.driver", "E:\\Testing related docs\\chromedriver_win32\\chromedriver.exe");
+		System.getProperty("webdriver.chrome.driver", Constant.Driver_Path_Chrome);
 		WebDriver driver = new ChromeDriver();
 		String baseURL = "http://demo.guru99.com/test/radio.html";
 		driver.get(baseURL);
@@ -21,6 +21,13 @@ public class AccessingForms_2 {
 		
 		System.out.println("Radio buttons clicked");
 
-		driver.close();
+		// interact with checkbox
+		WebElement checkbox1 = driver.findElement(By.id("vfb-6-0"));
+		checkbox1.click();
+		if(checkbox1.isSelected()) {
+			System.out.println("Checkbox is Toggled On");
+		} else {
+			System.out.println("Checkbox is Toggled Off");
+		}
 	}
 }
