@@ -24,7 +24,7 @@ public class Handle_dynamic_table_3 {
 		List rows = wd.findElements(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr/td[1]"));
 		System.out.println("Total No of rows are: " + rows.size());
 		for(int i = 0;i < rows.size(); i++) {
-			max = wd.findElement(By.xpath(".//*[@id='leftcontainer']/table/thread/tr["+(i+1)+"]/td[4]")).getText();
+			max = wd.findElement(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr["+(i+1)+"]/td[4]")).getText();
 			NumberFormat f = NumberFormat.getNumberInstance();
 			Number num = f.parse(max);
 			max = num.toString();
@@ -35,5 +35,4 @@ public class Handle_dynamic_table_3 {
 		}
 		System.out.println("Maximum current price is: " + r);
 	}
-
 }
